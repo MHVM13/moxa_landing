@@ -1,18 +1,14 @@
-/* TODO PX units to REM*/
-
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html {
-    font-size: 16px;
-}
-
 body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 16px;
     background-color: #F2F1EF;
+    color: #161513;
 }
 
 .container {
@@ -24,6 +20,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    height: 96px;
+}
+
+.header__logo-img {
+    display: block;
 }
 
 .menu__list {
@@ -32,6 +34,28 @@ body {
 
     display: flex;
     align-items: center;
-    gap: 10px
+    gap: 32px;
 }
+
+.menu__link:link,
+.menu__link:visited {
+    text-decoration: none;
+    color: inherit;
+    line-height: 24px;
+}
+
+.menu__link:hover,
+.menu__link:active {
+
+}
+
+.header__logo, .header__btn {
+    flex-basis: 20%;
+}
+
+.header__btn {
+    text-align: right;
+}
+
+
 
