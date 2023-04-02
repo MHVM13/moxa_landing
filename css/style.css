@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+ul, ol {
+    list-style: none;
+}
+
+.grid {
+    display: grid;
+}
+
 body {
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 16px;
@@ -14,6 +22,11 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .header {
@@ -39,14 +52,18 @@ body {
 
 .menu__link:link,
 .menu__link:visited {
+    display: inline-block;
+    position: relative;
     text-decoration: none;
     color: inherit;
     line-height: 24px;
+    transition: all 0.3s ease;
 }
 
+/* TODO */
 .menu__link:hover,
 .menu__link:active {
-
+    
 }
 
 .header__logo, .header__btn {
@@ -55,6 +72,26 @@ body {
 
 .header__btn {
     text-align: right;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid #000;
+}
+
+.btn--white {
+    padding: 9px 26px;
+}
+
+.section-hero {
+    margin-top: 40px;
+}
+
+.hero__title {
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 
