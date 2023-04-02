@@ -20,8 +20,12 @@ body {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1060px;
     margin: 0 auto;
+}
+
+.container--wide {
+    max-width: 1280px;
 }
 
 a {
@@ -92,6 +96,21 @@ a {
     line-height: 64px;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 45px;
+}
+
+.hero__text {
+    align-self: center;
+}
+
+.hero__img img{
+    width: 100%;
+    display: block;
 }
 
 
