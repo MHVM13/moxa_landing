@@ -22,6 +22,7 @@ body {
 .container {
     max-width: 1060px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 .container--wide {
@@ -100,7 +101,7 @@ a {
 
 .hero-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 650px 550px;
     column-gap: 45px;
 }
 
