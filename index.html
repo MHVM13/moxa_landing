@@ -6,19 +6,21 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!--  TODO ADD META  -->
+
     <title>Moxa landing</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<header class="header">
-    <div class="container header__container">
-        <div class="header__logo">
+
+<div class="container container--wide">
+    <header class="header">
+        <div class="logo header__logo">
             <img class="header__logo-img" src="./img/logo.png" alt="Logo image">
         </div>
 
@@ -33,7 +35,34 @@
         <div class="header__btn">
             <a class="btn btn--white" href="#">Let's talk</a>
         </div>
+    </header>
+</div>
+
+<section class="section-hero">
+    <div class="container container--wide hero-container">
+        <div class="hero__text">
+            <h1 class="hero__title">Hi, I'm Tayler.<br> A creative designer<br> based in London</h1>
+
+            <div class="hero__skills">
+                <ul class="hero__skills-list">
+                    <li class="hero__skills-item">Design</li>
+                    <li class="hero__skills-item">Development</li>
+                    <li class="hero__skills-item">Webflow</li>
+                </ul>
+            </div>
+
+            <a class="btn btn--black" href="#">Got a project?</a>
+            <a class="btn btn--white" href="#">Let's talk</a>
+        </div>
+        <div class="hero__img">
+            <picture>
+                <!--       TODO webp         -->
+                <source srcset="./img/hero.png">
+                <img src="./img/hero.png" alt="Author of this page">
+            </picture>
+        </div>
     </div>
-</header>
+</section>
+
 </body>
 </html>

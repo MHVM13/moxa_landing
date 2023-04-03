@@ -4,12 +4,19 @@
     padding: 0;
 }
 
-body {
-    font-family: Bai Jamjuree, sans-serif;
-    font-size: 18px;
-    color: #161513;
+ul, ol {
+    list-style: none;
+}
 
+.grid {
+    display: grid;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 16px;
     background-color: #F2F1EF;
+    color: #161513;
 }
 
 .container {
@@ -18,20 +25,21 @@ body {
     padding: 10px;
 }
 
-.header {
-    height: 96px;
+.container--wide {
+    max-width: 1280px;
 }
 
-.header__container {
-    max-width: 1280px;
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
 
-.header__logo a {
-    display: inline-block;
+    height: 96px;
 }
 
 .header__logo-img {
@@ -39,23 +47,28 @@ body {
 }
 
 .menu__list {
+    list-style: none;
+    text-decoration: none;
+
     display: flex;
     align-items: center;
-    gap: 32px
+    gap: 32px;
 }
 
-.menu__item {
-
-}
-
-.menu__link:hover, .menu__link:active  {
-    text-decoration: underline;
-}
-
-.btn {
+.menu__link:link,
+.menu__link:visited {
     display: inline-block;
-    padding: 9px 26px;
-    border: 1px solid #161513;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    line-height: 24px;
+    transition: all 0.3s ease;
+}
+
+/* TODO */
+.menu__link:hover,
+.menu__link:active {
+    
 }
 
 .header__logo, .header__btn {
@@ -65,5 +78,41 @@ body {
 .header__btn {
     text-align: right;
 }
+
+.btn {
+    display: inline-block;
+    border: 1px solid #000;
+}
+
+.btn--white {
+    padding: 9px 26px;
+}
+
+.section-hero {
+    margin-top: 40px;
+}
+
+.hero__title {
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 650px 550px;
+    column-gap: 45px;
+}
+
+.hero__text {
+    align-self: center;
+}
+
+.hero__img img{
+    width: 100%;
+    display: block;
+}
+
 
 
