@@ -1,37 +1,69 @@
-/* TODO PX units to REM*/
-
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html {
-    font-size: 16px;
-}
-
 body {
+    font-family: Bai Jamjuree, sans-serif;
+    font-size: 18px;
+    color: #161513;
+
     background-color: #F2F1EF;
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1060px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 .header {
+    height: 96px;
+}
+
+.header__container {
+    max-width: 1280px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.menu__list {
-    list-style: none;
-    text-decoration: none;
+.header__logo a {
+    display: inline-block;
+}
 
+.header__logo-img {
+    display: block;
+}
+
+.menu__list {
     display: flex;
     align-items: center;
-    gap: 10px
+    gap: 32px
 }
+
+.menu__item {
+
+}
+
+.menu__link:hover, .menu__link:active  {
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    padding: 9px 26px;
+    border: 1px solid #161513;
+}
+
+.header__logo, .header__btn {
+    flex-basis: 20%;
+}
+
+.header__btn {
+    text-align: right;
+}
+
 
