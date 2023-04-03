@@ -38,35 +38,82 @@
     </header>
 </div>
 
-<section class="section-hero">
-    <div class="container container--wide hero-container">
-        <div class="hero__text">
-            <h1 class="hero__title">
-                Hi, I'm Tayler.<br>
-                A creative<span><img src="./img/IMAGE.png" alt="Decoration symbol"></span>designer<br>
-                based in London
-            </h1>
+<main>
+    <section class="section-hero">
+        <div class="container container--wide hero-container">
+            <div class="hero__text">
+                <h1 class="hero__title">
+                    Hi, I'm Tayler.<br>
+                    A creative<span><img src="./img/IMAGE.png" alt="Decoration symbol"></span>designer<br>
+                    based in London
+                </h1>
 
-            <div class="hero__skills">
-                <ul class="hero__skills-list">
-                    <li class="hero__skills-item">Design</li>
-                    <li class="hero__skills-item">Development</li>
-                    <li class="hero__skills-item">Webflow</li>
+                <div class="hero__skills">
+                    <ul class="hero__skills-list">
+                        <li class="hero__skills-item">Design</li>
+                        <li class="decoration-star hero__skills-star"><img src="./img/star.png" alt="Decoration star"></li>
+                        <li class="hero__skills-item">Development</li>
+                        <li class="decoration-star hero__skills-star"><img src="./img/star.png" alt="Decoration star"></li>
+                        <li class="hero__skills-item">Webflow</li>
+                    </ul>
+                </div>
+
+                <div class="hero__btns">
+                    <a class="btn btn--black hero__btn" href="#">Got a project?</a>
+                    <a class="btn btn--white hero__btn" href="#">Let's talk</a>
+                </div>
+            </div>
+            <div class="hero__img">
+                <picture>
+                    <source srcset="./img/hero.webp" type="image/webp"/>
+                    <source srcset="./img/hero.png" type="image/png"/>
+                    <img src="./img/hero.png" alt="Author of this page">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!--  TODO  -->
+    <div class="specialization">
+        <ul class="specialization__list">
+            <li class="specialization__item">Development</li>
+            <li class="decoration-star"><img src="./img/star.png" alt="Decoration star"></li>
+            <li class="specialization__item">Strategy</li>
+            <li class="decoration-star"><img src="./img/star.png" alt="Decoration star"></li>
+            <li class="specialization__item">Product design</li>
+            <li class="decoration-star"><img src="./img/star.png" alt="Decoration star"></li>
+            <li class="specialization__item">Motion graphic</li>
+            <li class="decoration-star"><img src="./img/star.png" alt="Decoration star"></li>
+            <li class="specialization__item">Art direction</li>
+            <li class="decoration-star"><img src="./img/star.png" alt="Decoration star"></li>
+            <li class="specialization__item">Design</li>
+            <li class="decoration-star"><img src="./img/star.png" alt="Decoration star"></li>
+            <li class="specialization__item">Branding</li>
+        </ul>
+    </div>
+
+    <section class="section-about">
+        <div class="container">
+            <div class="about__author-text"></div>
+            <div class="about__main-text"></div>
+
+            <div class="about__advantages">
+                <ul class="about__advantages-list">
+                    <li class="about__advantages-item"><span>7+</span>Years of experience</li>
+                    <li class="about__advantages-item about__advantages-item--black"><span>50+</span>Projects completed</li>
+                    <li class="about__advantages-item"><span>30+</span>Happy clients</li>
                 </ul>
             </div>
-
-            <a class="btn btn--black" href="#">Got a project?</a>
-            <a class="btn btn--white" href="#">Let's talk</a>
         </div>
-        <div class="hero__img">
-            <picture>
-                <!--       TODO webp         -->
-                <source srcset="./img/hero.png">
-                <img src="./img/hero.png" alt="Author of this page">
-            </picture>
-        </div>
-    </div>
-</section>
+    </section>
 
+    <section class="section-awards">
+        <div class="container">
+            <div class="section-header">
+                <img src="./img/IMAGE.png" alt="Decorative image">
+            </div>
+        </div>
+    </section>
+</main>
 </body>
 </html>

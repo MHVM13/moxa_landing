@@ -22,7 +22,7 @@ body {
 .container {
     max-width: 1060px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .container--wide {
@@ -30,6 +30,7 @@ body {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
 }
@@ -82,6 +83,8 @@ a {
 .btn {
     display: inline-block;
     border: 1px solid #000;
+    line-height: 24px;
+    margin: 0;
 }
 
 .btn--white {
@@ -90,10 +93,12 @@ a {
 
 .section-hero {
     margin-top: 40px;
+    margin-bottom: 150px;
 }
 
 .hero-container {
     display: grid;
+    /* TODO watch video + find the best solution*/
     grid-template-columns: 1.9fr 1.26fr;
     column-gap: 45px;
 }
@@ -107,18 +112,104 @@ a {
     line-height: 64px;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.56;
+    letter-spacing: 0.56px;
+    margin-bottom: 32px;
 }
 
 .hero__title span {
     margin: 0 12px;
 }
 
+.hero__skills {
+    margin-bottom: 40px;
+}
 
+.hero__skills-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.hero__skills-item {
+    font-size: 23px;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.48px;
+}
+
+.decoration-star img {
+    display: block;
+}
+
+.hero__btns {
+    display: flex;
+}
+
+.hero__btn {
+    padding: 13px 33px;
+}
+
+.btn--black {
+    background-color: #161513;
+    color: #fff;
+}
 
 .hero__img img{
     width: 100%;
     display: block;
+}
+
+.specialization {
+    transform: rotate(-5deg);
+    margin-bottom: 200px;
+}
+
+.specialization__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #161513;
+    padding: 15px 30px;
+}
+
+.specialization__item {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+
+.section-about {
+    margin-bottom: 120px;
+}
+
+
+.about__advantages-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about__advantages-item {
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 1.28px;
+    box-shadow: 0 0 0 1px inset #161513;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 23px 72px;
+}
+
+.about__advantages-item span {
+    display: block;
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 11px;
+}
+
+.about__advantages-item--black {
+    background-color: #161513;
+    color: #fff;
 }
 
 
