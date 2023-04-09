@@ -15,6 +15,7 @@ ul, ol {
 body {
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 16px;
+    font-weight: 400;
     background-color: #F2F1EF;
     color: #161513;
 }
@@ -179,11 +180,9 @@ a {
     line-height: 32px;
 }
 
-
 .section-about {
     margin-bottom: 120px;
 }
-
 
 .about__advantages-list {
     display: grid;
@@ -210,6 +209,100 @@ a {
 .about__advantages-item--black {
     background-color: #161513;
     color: #fff;
+}
+
+/* Section awards */
+.section-awards {
+    margin-bottom: 120px;
+}
+
+.awards-header {
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+.section-header__icon {
+    width: 40px;
+    display: inline-block;
+    margin-bottom: 22px;
+}
+
+.section-header__title {
+    font-size: 45px;
+    line-height: 56px;
+    letter-spacing: 1.44px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.section-header__subtitle {
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+}
+
+.awards-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 35px;
+    border: 2px solid #161513;
+}
+
+.awards-item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.awards-item__description {
+    display: flex;
+    align-items: center;
+    gap: 25px
+}
+
+.awards-item__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+    line-height: 32px;
+    width: 48px;
+    height: 48px;
+    background-color: #E94D35;
+    color: #fff;
+}
+
+.awards-item__title, .awards-item__subtitle {
+    line-height: 32px;
+
+}
+
+.awards-item__title {
+    font-size: 23px;
+    letter-spacing: 0.48px;
+}
+
+.awards-item__subtitle {
+    font-size: 18px;
+}
+
+.awards-item__type {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px
+}
+
+.awards-item__category {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.awards-item__year {
+    font-size: 16px;
+    line-height: 32px;
 }
 
 
