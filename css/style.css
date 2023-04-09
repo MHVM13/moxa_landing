@@ -98,10 +98,9 @@ a {
 }
 
 .hero-container {
-    display: grid;
-    /* TODO watch video + find the best solution*/
-    grid-template-columns: 1.9fr 1.26fr;
-    column-gap: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .hero__text {
@@ -216,7 +215,7 @@ a {
     margin-bottom: 120px;
 }
 
-.awards-header {
+.section-header {
     margin: 0 auto 60px auto;
     text-align: center;
 }
@@ -305,5 +304,47 @@ a {
     line-height: 32px;
 }
 
+/* ================= */
+/* SECTION PORTFOLIO */
+/* ================= */
+.section-portfolio {
+    margin-bottom: 120px;
+}
 
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
 
+.portfolio-item__img img {
+    display: block;
+}
+
+.portfolio-item__text {
+
+}
+
+.portfolio-item__category {
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 1.44px;
+    padding: 5px 12px;
+    background-color: #E94D35;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.portfolio-item__title {
+    font-size: 45px;
+    line-height: 56px;
+    letter-spacing: 1.44px;
+    margin-bottom: 50px;
+}
+
+.portfolio-item__link:link, .portfolio-item__link:visited  {
+    font-size: 20px;
+    line-height: 32px;
+}
