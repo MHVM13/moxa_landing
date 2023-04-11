@@ -335,7 +335,7 @@
 }
 
 /* ================= */
-/* SECTION SERVICES */
+/* SECTION CUSTOMERS */
 /* ================= */
 .section-customer {
     margin-bottom: 120px;
@@ -352,11 +352,15 @@
     margin-bottom: 0;
 }
 
-.customer__item {
+.customer-item {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 98px;
     border: 1px solid #161513;
 }
+
+/* ================= */
+/* SECTION SERVICES */
+/* ================= */
 
