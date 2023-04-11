@@ -1,4 +1,4 @@
-<img src="./img/logo.png" style="text-align: center;">
+<img src="./img/logo.png" style="display: block; margin: 0 auto;">
 
 # Moxa landing page
 
