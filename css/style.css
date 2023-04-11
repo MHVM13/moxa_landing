@@ -334,4 +334,29 @@
     line-height: 32px;
 }
 
+/* ================= */
+/* SECTION SERVICES */
+/* ================= */
+.section-customer {
+    margin-bottom: 120px;
+}
+
+.customer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*grid-template-rows: repeat(2, 98px);*/
+    gap: 32px
+}
+
+.section-header__title--no-margin {
+    margin-bottom: 0;
+}
+
+.customer__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98px;
+    border: 1px solid #161513;
+}
 
