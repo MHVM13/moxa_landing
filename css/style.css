@@ -268,12 +268,16 @@
     gap: 44px;
 }
 
-.portfolio-item__img img {
-    display: block;
+.portfolio-item:not(:last-child) {
+    margin-bottom: 95px;
 }
 
-.portfolio-item__text {
+.portfolio-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
 
+.portfolio-item__img img {
+    display: block;
 }
 
 .portfolio-item__category {
@@ -299,3 +303,5 @@
     font-size: 20px;
     line-height: 32px;
 }
+
+
