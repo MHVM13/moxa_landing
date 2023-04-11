@@ -1,5 +1,6 @@
-<img src="./img/logo.png" style="display: block; text-align:center;">
-
+<p style="text-align:center;">
+  <img src="./img/logo.png"/>
+</p>
 # Moxa landing page
 
 ### Figma template
