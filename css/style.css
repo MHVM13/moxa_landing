@@ -361,6 +361,63 @@
 }
 
 /* ================= */
-/* SECTION SERVICES */
+/* SECTION ARTICLES */
 /* ================= */
+.articles-list {
+    position: relative;
+    margin-bottom: 95px;
+}
 
+.articles-list:after {
+    content: url(img/icon_2.svg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 240px;
+    height: 240px;
+}
+
+.articles-item {
+    border: 2px solid #161513;
+    padding: 13px 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.articles-item:not(:last-child) {
+    margin-bottom: 100px;
+}
+
+.articles-item__info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #E94D35;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+}
+
+.articles-item__title {
+    font-size: 23px;
+    line-height: 32px;
+    letter-spacing: 0.48px;
+}
+
+.articles-item__preview {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.articles-browse-btn {
+    display: block;
+    padding: 14px 28px;
+    color: #fff;
+    background-color: #161513;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+}
