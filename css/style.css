@@ -62,7 +62,7 @@
     margin-bottom: 150px;
 }
 
-.hero-container {
+.hero-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,6 +70,10 @@
 
 .hero__text {
     align-self: center;
+}
+
+.hero__text-img {
+    display: inline;
 }
 
 .hero__title {
