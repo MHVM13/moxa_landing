@@ -8,14 +8,24 @@
     padding: 0;
 }
 
-ul, ol {
-    list-style: none;
-}
-
 body {
     font: 400 16px 'Bai Jamjuree', sans-serif;
     background-color: #F2F1EF;
     color: #161513;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+}
+
+ul, ol {
+    list-style: none;
 }
 
 .container {
@@ -28,12 +38,6 @@ body {
     max-width: 1280px;
 }
 
-a {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-}
-
 .btn {
     display: inline-block;
     border: 1px solid #000;
@@ -44,3 +48,4 @@ a {
 .btn--white {
     padding: 9px 26px;
 }
+

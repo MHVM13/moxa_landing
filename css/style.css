@@ -1,19 +1,18 @@
+/* ================= */
+/*      HEADER       */
+/* ================= */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
     height: 96px;
 }
 
-.header__logo-img {
-    display: block;
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .menu__list {
-    list-style: none;
-    text-decoration: none;
-
     display: flex;
     align-items: center;
     gap: 32px;
@@ -21,18 +20,30 @@
 
 .menu__link:link,
 .menu__link:visited {
-    display: inline-block;
     position: relative;
-    text-decoration: none;
-    color: inherit;
     line-height: 24px;
-    transition: all 0.3s ease;
 }
 
-/* TODO */
-.menu__link:hover,
-.menu__link:active {
-    
+.menu__link:link::after,
+.menu__link:visited::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #161513;
+    bottom: -1px;
+    left: 0;
+    transition: all .3s ease;
+}
+
+.menu__link:hover::after,
+.menu__link:active::after {
+    background-color: #E94D35;
+}
+
+.header__logo {
+    line-height: 0;
 }
 
 .header__logo, .header__btn {
@@ -43,6 +54,9 @@
     text-align: right;
 }
 
+/* ================= */
+/*   SECTION HERO    */
+/* ================= */
 .section-hero {
     margin-top: 40px;
     margin-bottom: 150px;
@@ -105,7 +119,7 @@
     color: #fff;
 }
 
-.hero__img img{
+.hero__img img {
     width: 100%;
     display: block;
 }
@@ -299,7 +313,7 @@
     margin-bottom: 50px;
 }
 
-.portfolio-item__link:link, .portfolio-item__link:visited  {
+.portfolio-item__link:link, .portfolio-item__link:visited {
     font-size: 20px;
     line-height: 32px;
 }
@@ -363,6 +377,10 @@
 /* ================= */
 /* SECTION ARTICLES */
 /* ================= */
+.section-articles {
+    margin-bottom: 120px;
+}
+
 .articles-list {
     position: relative;
     margin-bottom: 95px;
@@ -370,6 +388,7 @@
 
 .articles-list:after {
     content: url(img/icon_2.svg);
+    display: block;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -420,4 +439,82 @@
     font-size: 20px;
     line-height: 32px;
     text-align: center;
+}
+
+/* ================= */
+/* SUBSCRIPTION */
+/* ================= */
+.subscription {
+    background-color: #E6E3DE;
+    height: 176px;
+}
+
+.subscription-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.subscription__text {
+    font-size: 23px;
+    line-height: 32px;
+    letter-spacing: 0.48px;
+}
+
+/* TODO styling*/
+.subscription__email {
+    border: 2px solid #161513;
+    padding: 10px 21px;
+    font-size: 23px;
+    line-height: 32px;
+    letter-spacing: 0.48px;
+    background-color: #E6E3DE;
+    color: #161513;
+    margin-right: 25px;
+}
+
+.subscription__btn {
+    color: #fff;
+    font-size: 23px;
+    line-height: 32px;
+    letter-spacing: 0.48px;
+    background-color: #161513;
+    padding: 12px 15px;
+    border: none;
+}
+
+.footer {
+    background-color: #161513;
+    color: #fff;
+    min-height: 220px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer__logo img {
+    display: block;
+    /*filter: ;*/
+    /*color: #fff;*/
+    width: 32px;
+    height: 32px;
+}
+
+.footer-info {
+    justify-self: end;
+}
+
+.footer__copyright {
+    align-self: end;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer-social {
+    justify-self: end;
+    align-self: end;
 }
