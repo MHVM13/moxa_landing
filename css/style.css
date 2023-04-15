@@ -252,10 +252,6 @@
     color: #fff;
 }
 
-
-
-
-
 /* ================= */
 /*   SECTION AWARDS   */
 /* ================= */
@@ -277,7 +273,7 @@
 .section-header__title {
     font-size: 45px;
     line-height: 56px;
-    letter-spacing: 1.44px;
+    letter-spacing: 0.03em;
     margin-bottom: 18px;
     font-weight: 400;
 }
@@ -285,7 +281,7 @@
 .section-header__subtitle {
     font-size: 18px;
     line-height: 32px;
-    letter-spacing: 1.44px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
 }
 
@@ -327,7 +323,7 @@
 
 .awards-item__title {
     font-size: 23px;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.02em;
 }
 
 .awards-item__subtitle {
@@ -380,7 +376,7 @@
 .portfolio-item__category {
     font-size: 18px;
     line-height: 32px;
-    letter-spacing: 1.44px;
+    letter-spacing: 0.03em;
     padding: 5px 12px;
     background-color: #E94D35;
     color: #fff;
@@ -392,7 +388,7 @@
 .portfolio-item__title {
     font-size: 45px;
     line-height: 56px;
-    letter-spacing: 1.44px;
+    letter-spacing: 0.032em;
     margin-bottom: 50px;
 }
 
@@ -422,7 +418,7 @@
 .services-item__title {
     font-size: 31px;
     line-height: 40px;
-    letter-spacing: 0.64px;
+    letter-spacing: 0.02em;
     margin-bottom: 28px;
 }
 
@@ -499,14 +495,14 @@
     color: #E94D35;
     font-size: 16px;
     line-height: 32px;
-    letter-spacing: 1.28px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
 }
 
 .articles-item__title {
     font-size: 23px;
     line-height: 32px;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.02em;
 }
 
 .articles-item__preview {
@@ -542,7 +538,7 @@
 .subscription__text {
     font-size: 23px;
     line-height: 32px;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.02em;
 }
 
 /* TODO styling*/
@@ -551,7 +547,7 @@
     padding: 10px 21px;
     font-size: 23px;
     line-height: 32px;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.02em;
     background-color: #E6E3DE;
     color: #161513;
     margin-right: 25px;
@@ -561,7 +557,7 @@
     color: #fff;
     font-size: 23px;
     line-height: 32px;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.02em;
     background-color: #161513;
     padding: 12px 15px;
     border: none;
