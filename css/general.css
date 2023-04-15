@@ -12,6 +12,7 @@ body {
     font: 400 16px 'Bai Jamjuree', sans-serif;
     background-color: #F2F1EF;
     color: #161513;
+    overflow-x: hidden;
 }
 
 a {
@@ -34,7 +35,7 @@ ul, ol {
     padding: 0 10px;
 }
 
-.container--wide {
+.container--lg {
     max-width: 1280px;
 }
 

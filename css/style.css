@@ -68,10 +68,6 @@
     justify-content: space-between;
 }
 
-.hero__text {
-    align-self: center;
-}
-
 .hero__text-img {
     display: inline;
 }
@@ -81,7 +77,7 @@
     line-height: 64px;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.56px;
+    letter-spacing: 0.01em;
     margin-bottom: 32px;
 }
 
@@ -103,7 +99,7 @@
     font-size: 23px;
     line-height: 32px;
     text-transform: uppercase;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.02em;
 }
 
 .decoration-star img {
@@ -128,16 +124,23 @@
     display: block;
 }
 
+/* ================= */
+/*   SPECIALIZATION   */
+/* ================= */
 .specialization {
+    position: relative;
+    width: 150%;
+    left: -10px;
     transform: rotate(-5deg);
     margin-bottom: 200px;
+    background-color: #161513;
 }
 
 .specialization__list {
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #161513;
     padding: 15px 30px;
 }
 
@@ -148,30 +151,100 @@
     line-height: 32px;
 }
 
+/* ================= */
+/*   SECTION ABOUT   */
+/* ================= */
 .section-about {
     margin-bottom: 120px;
 }
 
-.about__advantages-list {
+.about__author {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 120px
+;
+}
+
+.about__author-name {
+    text-transform: uppercase;
+    font-size: 23px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    margin-bottom: 21px;
+
+    display: flex;
+    align-items: center;
+}
+
+.about__author-name span {
+    margin: 0 8px;
+    line-height: 0;
+}
+
+.about__author-career {
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.01em;
+}
+
+.about__author-text-primary {
+    font-size: 31px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    margin-bottom: 36px;
+}
+
+.about__author-text-secondary {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 27px;
+}
+
+.about__author-personal {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.about__author-personal-header {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    color: #E94D35;
+    margin-bottom: 9px;
+}
+
+.about__author-personal-data {
+    font-size: 23px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+}
+
+.about__advantages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .about__advantages-item {
-    font-size: 16px;
-    line-height: 32px;
-    letter-spacing: 1.28px;
-    box-shadow: 0 0 0 1px inset #161513;
-    text-transform: uppercase;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    border: 2px solid #161513;
+    padding: 22px 44px;
     text-align: center;
-    padding: 23px 72px;
 }
 
-.about__advantages-item span {
-    display: block;
+.about__advantages-num {
     font-size: 56px;
     line-height: 64px;
-    margin-bottom: 11px;
+}
+
+.about__advantages-text {
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
 
 .about__advantages-item--black {
@@ -179,7 +252,13 @@
     color: #fff;
 }
 
-/* Section awards */
+
+
+
+
+/* ================= */
+/*   SECTION AWARDS   */
+/* ================= */
 .section-awards {
     margin-bottom: 120px;
 }
