@@ -521,7 +521,7 @@
 }
 
 /* ================= */
-/* SUBSCRIPTION */
+/*   SUBSCRIPTION    */
 /* ================= */
 .subscription {
     background-color: #E6E3DE;
@@ -563,37 +563,64 @@
     border: none;
 }
 
+/* ================= */
+/*       FOOTER      */
+/* ================= */
 .footer {
     background-color: #161513;
     color: #fff;
     min-height: 220px;
+    padding: 65px 0 25px 0;
 }
 
 .footer-content {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 }
 
 .footer__logo img {
     display: block;
-    /*filter: ;*/
-    /*color: #fff;*/
     width: 32px;
     height: 32px;
+    filter: brightness(0) invert();
 }
 
 .footer-info {
     justify-self: end;
 }
 
+.footer-info__list {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+}
+
 .footer__copyright {
     align-self: end;
     font-size: 14px;
     line-height: 24px;
+    grid-row: 3;
 }
 
 .footer-social {
     justify-self: end;
     align-self: end;
+    grid-row: 3;
+}
+
+.footer-social__list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-social__item {
+    border: 1px solid #969186;
+    padding: 8px;
+    color: #969186;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
 }
